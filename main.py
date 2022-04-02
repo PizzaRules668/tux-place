@@ -303,7 +303,7 @@ def load_image():
     global image_width
     global image_height
     # read and load the image to draw and get its dimensions
-    image_path = os.path.join(os.path.abspath(os.getcwd()), "image.jpg")
+    image_path = os.path.join(os.path.abspath(os.getcwd()), "image.png")
     im = Image.open(image_path)
     pix = im.load()
     print(
