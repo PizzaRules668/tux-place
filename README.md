@@ -27,10 +27,10 @@ ENV_PLACE_USERNAME='["developer_username"]'       <- Replace developer_username 
 ENV_PLACE_PASSWORD='["developer_password"]'       <- Replace developer_password with your reddit password
 ENV_PLACE_APP_CLIENT_ID='["app_client_id"]'       <- Replace app_client_id with id from under "personal use script"
 ENV_PLACE_SECRET_KEY='["app_secret_key"]'         <- Replace app_secret_key with key from "secret"
-ENV_DRAW_X_START="0"
-ENV_DRAW_Y_START="0"
-ENV_R_START='["0"]'
-ENV_C_START='["0"]'
+ENV_DRAW_X_START="0"                              <- Don't change
+ENV_DRAW_Y_START="0"                              <- Don't change
+ENV_R_START='["0"]'                               <- Don't change
+ENV_C_START='["0"]'                               <- Don't change
 
 5. Save .env and launch main.exe
 
