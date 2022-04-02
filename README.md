@@ -1,5 +1,3 @@
-# Under maintance! There are some problems with image colors
-
 # genshin-place-war by genshindb.net
 Modified reddit-place-script to bring the Genshin Impact logo back to the canvas.
 
