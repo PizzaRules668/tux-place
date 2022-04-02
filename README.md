@@ -38,13 +38,21 @@ ENV_C_START='["0"]'
 You can add multiple accounts in .env by this template:
 
 ENV_PLACE_USERNAME='["developer_username_1", "developer_username_2"]'
+
 ENV_PLACE_PASSWORD='["developer_password_1", "developer_password_2"]'
+
 ENV_PLACE_APP_CLIENT_ID='["app_client_id_1", "app_client_id_2"]'
+
 ENV_PLACE_SECRET_KEY='["app_secret_key_1", "app_secret_key_2"]'
+
 ENV_DRAW_X_START="0"
+
 ENV_DRAW_Y_START="0"
+
 ENV_R_START='["0", "0"]'
+
 ENV_C_START='["0", "0"]'
+
 
 # Troubleshooting
 If main.exe closing after launch with KeyError: "access token" you probably put incorrect data in .env file.
