@@ -56,6 +56,8 @@ ENV_C_START='["0", "0"]'
 
 # Troubleshooting
 If main.exe closing after launch with KeyError: "access token" you probably put incorrect data in .env file.
+2FA also can cause errors.
+It is not necessary to connect the main account, you can create a new one.
 
 # Like this?
 You can support us by visiting and bookmarking our site with genshin guides: https://genshindb.net/
