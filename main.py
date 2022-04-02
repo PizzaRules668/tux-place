@@ -14,7 +14,7 @@ from PIL import Image
 import random
 
 # set verbose mode to increase output (messy)
-verbose_mode = True
+verbose_mode = False
 
 if os.path.exists("./.env"):
     # load env variables
