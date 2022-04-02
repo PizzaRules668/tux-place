@@ -269,16 +269,15 @@ def get_unset_pixel(boardimg, x, y):
                     pix2[x, y] != new_rgb,
                 )
             if target_rgb[3] == 255:
-                if verbose_mode:
-                    print(
-                        "Different Pixel found at:",
-                        x + pixel_x_start,
-                        y + pixel_y_start,
-                        "With Color:",
-                        pix2[x + pixel_x_start, y + pixel_y_start],
-                        "Replacing with:",
-                        new_rgb,
-                    )
+                print(
+                    "Different Pixel found at:",
+                    x + pixel_x_start,
+                    y + pixel_y_start,
+                    "With Color:",
+                    pix2[x + pixel_x_start, y + pixel_y_start],
+                    "Replacing with:",
+                    new_rgb,
+                )
                 break
             else:
             	pass
