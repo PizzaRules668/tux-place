@@ -14,7 +14,7 @@ from PIL import Image
 import random
 
 # set verbose mode to increase output (messy)
-verbose_mode = False
+verbose_mode = True
 
 if os.path.exists("./.env"):
     # load env variables
@@ -92,7 +92,7 @@ def color_id_to_name(color_id):
 
 # function to find the closest rgb color from palette to a target rgb color
 def closest_color(target_rgb, rgb_colors_array_in):
-    r, g, b = target_rgb
+    r, g, b, temp_a_ignore = target_rgb
     color_diffs = []
     for color in rgb_colors_array_in:
         cr, cg, cb = color
@@ -258,16 +258,17 @@ def get_unset_pixel(boardimg, x, y):
             print(x + pixel_x_start, y + pixel_y_start)
             print(x, y, "boardimg", image_width, image_height)
         target_rgb = pix[x, y]
+        print(target_rgb)
         new_rgb = closest_color(target_rgb, rgb_colors_array)
         if pix2[x + pixel_x_start, y + pixel_y_start] != new_rgb:
             if verbose_mode:
                 print(
                     pix2[x + pixel_x_start, y + pixel_y_start],
                     new_rgb,
-                    target_rgb != (69, 42, 0),
+                    target_rgb[3] == 255,
                     pix2[x, y] != new_rgb,
                 )
-            if target_rgb != (69, 42, 0):
+            if target_rgb[3] == 255:
                 if verbose_mode:
                     print(
                         "Different Pixel found at:",
