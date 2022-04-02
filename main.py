@@ -258,7 +258,7 @@ def get_unset_pixel(boardimg, x, y):
             print(x + pixel_x_start, y + pixel_y_start)
             print(x, y, "boardimg", image_width, image_height)
         target_rgb = pix[x, y]
-        print(target_rgb)
+        
         new_rgb = closest_color(target_rgb, rgb_colors_array)
         if pix2[x + pixel_x_start, y + pixel_y_start] != new_rgb:
             if verbose_mode:
