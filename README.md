@@ -1,6 +1,9 @@
 # genshin-place-war by genshindb.net
 Modified reddit-place-script to bring the Genshin Impact logo back to the canvas.
 
+# UPDATE
+People have decided to draw venti on the letter G, so in order not to clean up their work, remove the G from the .png
+
 # About
 Script use image from "image.jpg". it is mapped to an image from the Genshin Logo Template overlay. Brown color is representing transparent pixels.
 
