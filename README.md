@@ -8,11 +8,17 @@ Script use image from "image.jpg". it is mapped to an image from the Genshin Log
 1. Download archive from release folder and unzip it.
 2. Login to your Reddit account and go to
    https://www.reddit.com/prefs/apps
+   
    Scroll down to "Create Application" and fill field "name" with, for example, "genshin-place"
+   
    Choose type "script"
+   
    Fill "Redirect Url" with something, for example "https://someurl.com"
+   
    Click "Create App"
+   
 3. Copy key from "secret"
+
    Copy your id from under "personal use script"
    
 4. In unpacked folder find .env file and open it in text editor:
